@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- for website logo icon -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/242/242452.png">
+  <title>Food Quest</title>
+</head>
+
+<body>
+
+
+  <header>
+    <!-- header starts here -->
+
+    <a href="index.html" class="logo"><i class="fas fa-utensils"></i>FoodQuest</a>
+
+    <nav class="navbar">
+      <a href="#Home">Home</a>
+      <a href="#Dishes">Dishes</a>
+      <a href="#About">About</a>
+      <a href="#Menu">Menu</a>
+      <a href="#Order">Order</a>
+    </nav>
+
+    <div class="icon">
+      <a href="account.html" class="fa fa-user"></a>
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <!-- <a href="#" class="fas fa-heart"></a> -->
+      <span class="cart__icon">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <span class="item__total">0</span>
+      </span>
+    </div>
+
+
+  </header>
+  <!-- header ends here -->
+
+  <!-- search form -->
+  <form action="" id="search-form">
+    <input type="search" id="search-box" placeholder="search here..." />
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+  <!-- search form ends-->
+
+  <!-- Home sections -->
+  <section class="home" id="Home">
+    <div class="swiper home-slider">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <div class="content">
+            <span>Special Dishes </span>
+            <h3>Spicy Noodles</h3>
+            <p>
+              Noodles with delicious Hot Chicken flavour is double spicy and
+              is a perfect choice for spice lovers.
+            </p>
+            <button class="btn addToCart" data-id=1>Add to Cart</button>
+            <!-- <a href="#Order" class="btn">Order Now</a> -->
+          </div>
+          <div class="image">
+            <img src="images/home-img-1.png" />
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <div class="content">
+            <span>Special Dishes </span>
+            <h3>Fried Chicken</h3>
+            <p>
+              Fried Chicken is a dish consisting of chicken pieces that have
+              been coated with batter and deep fried.
+            </p>
+            <button class="btn addToCart" data-id=2>Add to Cart</button>
+            <!-- <a href="#Order" class="btn">Order Now</a> -->
+          </div>
+          <div class="image">
+            <img src="images/home-img-2.png" />
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <div class="content">
+            <span>Special Dishes </span>
+            <h3>Hot Chilli Pizza</h3>
+            <p>
+              A dish consisting of a flat round bread base with vegetables,
+              cheese, meat, etc. on top, which is cooked in an oven.
+            </p>
+            <button class="btn addToCart" data-id=3>Add to Cart</button>
+            <!-- <a href="#Order" class="btn">Order Now</a> -->
+          </div>
+          <div class="image">
+            <img src="images/home-img-3.png" />
+          </div>
+        </div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- Dishes Section Starts here!! -->
+  <section class="dishes" id="Dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dish-1.png" alt="">
+        <h3>Burger</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹150</span>
+        <button class="btn addToCart" data-id=4>Add to Cart</button>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dish-2.png" alt="">
+        <h3>Chicken Nuggets</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹150</span>
+        <button class="btn addToCart" data-id=5>Add to Cart</button>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dish-3.png" alt="">
+        <h3>Roast Chicken</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹150</span>
+        <button class="btn addToCart" data-id=6>Add to Cart</button>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dish-4.png" alt="">
+        <h3>Pan Pizza</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹150</span>
+        <button class="btn addToCart" data-id=7>Add to Cart</button>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dish-5.png" alt="">
+        <h3>Chocolate Coockies</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹150</span>
+        <button class="btn addToCart" data-id=8>Add to Cart</button>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dish-6.png" alt="">
+        <h3>Chicken Lollipop</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹150</span>
+        <button class="btn addToCart" data-id=9>Add to Cart</button>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+      </div>
+
+    </div>
+  </section>
+  <!-- Dishes Section ends here!! -->
+
+  <!-- about section starts here -->
+  <section class="about" id="About">
+    <h3 class="sub-heading">About US</h3>
+    <h1 class="heading">WHY CHOOSE US?</h1>
+
+    <div class="row">
+
+      <div class="image">
+        <img src="images/about-img.png" alt="">
+      </div>
+
+      <div class="content">
+        <h3>Best Food In The Country</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, vel. Temporibus totam, animi sapiente, nesciunt
+          eius repellat sequi saepe illo accusamus placeat alias porro fugiat esse fuga explicabo ipsum provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium maiores neque necessitatibus
+          molestiae ratione numquam minima totam est laboriosam.</p>
+
+        <div class="icon-container">
+
+          <div class="icons">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Delivery</span>
+          </div>
+
+          <div class="icons">
+            <i class="fas fa-rupee-sign"></i>
+            <span>Easy Payment</span>
+          </div>
+
+          <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>24/7 Service</span>
+          </div>
+        </div>
+
+        <a href="#" class="btn">Learn More</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- about section ends here -->
+
+  <!-- menu section starts -->
+  <section class="menu" id="Menu">
+    <h3 class="sub-heading">Our Menu</h3>
+    <h1 class="heading">TODAY'S SPECIALITY</h1>
+    <div class="box-container">
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-1.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Pizza Pepperoni</h3>
+        <p>Italian open pie made of thin bread dough spread with a spiced mixture of e.g. tomato sauce and cheese with
+          pepperoni.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=10>Add to Cart</button>
+        <span>₹800</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-2.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Whopper Sandwich</h3>
+        <p>Our Whopper Sandwich is a ¼ lb* of savory flame-grilled beef topped with juicy tomatoes, fresh lettuce,
+          creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=11>Add to Cart</button>
+        <span>₹400</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-3.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Authentic French Crepe</h3>
+        <p>A Crêpe is a traditional French Thin Pancake made from 3 basic ingredients: Flour, Eggs and a liquid -
+          usually Milk. They can be served as a sweet or savoury dish, with the addition of Sugar or Salt in the batter
+          and a sweet or savoury filling. </p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=12>Add to Cart</button>
+        <span>₹375 - ₹800</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-4.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Chocolate Dessert</h3>
+        <p>This mouth-watering dessert combines these three ingredients together to make a masterpiece. This pie has
+          buttery biscuit base, a thick cream and chocolate filling and some lightly warmed bananas on top - spoons at
+          the ready!</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=13>Add to Cart</button>
+        <span>₹100-₹500</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-5.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Crepe Cake</h3>
+        <p>This crepe cake is beautiful and delicious! This is the easiest 30 layer cake you'll make with 15 crepes and
+          15 layers of cream.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=14>Add to Cart</button>
+        <span>₹600</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-6.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Cup Cakes</h3>
+        <p>Made from simple everyday ingredients, these cupcakes with vanilla frosting will be your new favorite. For
+          best results, use natural cocoa powder and buttermilk.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=15>Add to Cart</button>
+        <span>₹120</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-7.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Lemonade</h3>
+        <p>Simple and easy method for perfect lemonade every time! With simple syrup and fresh lemon juice.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=16>Add to Cart</button>
+        <span>₹70</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-8.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Sunrise Granola Bowl</h3>
+        <p>Non-fat vanilla Greek yogurt layered with fresh, seasonal fruit, nuts and our housemade granola. Served with
+          a blueberry muffin.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=17>Add to Cart</button>
+        <span>₹150</span>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <img src="images/menu-9.jpg">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Lemon Juice</h3>
+        <p>Simply squeeze fresh lemon juice into ice cube trays and freeze. Drop a few cubes into a glass of cold or hot
+          water as needed.</p>
+        <!-- <a href="#Order" class="btn">Add To Cart</a> -->
+        <button class="btn addToCart" data-id=18>Add to Cart</button>
+        <span>₹35</span>
+      </div>
+
+    </div>
+  </section>
+  <!-- menu section ends -->
+
+  <!-- Order Section Starts -->
+  <section class="order" id="Order">
+    <h3 class="sub-heading">Order Now</h3>
+    <h1 class="heading">Free & Fast</h1>
+
+    <form action="">
+
+      <div class="inputbox">
+        <div class="input">
+          <span>Your Name</span>
+          <input type="text" placeholder="Enter Your Name" required>
+        </div>
+        <div class="input">
+          <span>Your Number</span>
+          <input type="number" placeholder="Enter Your Number" required>
+        </div>
+      </div>
+
+      <div class="inputbox">
+        <div class="input">
+          <span>Your Order</span>
+          <input type="text" placeholder="Enter Food Name" required>
+        </div>
+        <div class="input">
+          <span>Additional Food</span>
+          <input type="text" placeholder="Extra with food">
+        </div>
+      </div>
+
+      <div class="inputbox">
+        <div class="input">
+          <span>Quantity</span>
+          <input type="number" placeholder="Enter Number">
+        </div>
+        <div class="input">
+          <span>Date & Time</span>
+          <input type="datetime-local" placeholder="Extra with food" required>
+        </div>
+      </div>
+
+      <div class="inputbox">
+        <div class="input">
+          <span>Your Address</span>
+          <textarea name="" placeholder="Enter your address" id="" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="input">
+          <span>Your message</span>
+          <textarea name="" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+
+      <input type="submit" value="Order Now" class="btn"
+        onclick="alert('Thanks For Ordering !! 🤘 But you will get Anything.')">
+
+    </form>
+  </section>
+  <!-- Order Section Ends -->
+
+  <!-- Footer Starts here -->
+  <section class="footer">
+    <div class="container">
+      <div class="box">
+        <h3>Locations</h3>
+        <a href="">India</a>
+        <a href="">Japan</a>
+        <a href="">Russia</a>
+        <a href="">USA</a>
+        <a href="">France</a>
+      </div>
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="#Home">Home</a>
+        <a href="#Dishes">Dishes</a>
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Order">Order</a>
+      </div>
+      <div class="box">
+        <h3>Contact info</h3>
+        <a href="">+123-456-789</a>
+        <a href="">+987-654-321</a>
+        <a href="">food.quest@gmail.com</a>
+        <a href="">questfest@gmail.com</a>
+        <a href="">Mumbai, India - 400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+        <a href="">Linkedin</a>
+      </div>
+    </div>
+    <div class="credit">Copyright @ 2023 by <span>Riya Pandey</span></div>
+  </section>
+  <!-- Footer  ends here -->
+
+  <!-- cart -->
+  <section class="cart__overlay">
+    <div class="cart">
+      <!-- closing icon -->
+      <span class="close__cart">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </span>
+      <!-- main cart -->
+      <h1>Your Cart</h1>
+      <div class="cart__centent">
+
+      </div>
+
+      <div class="cart__footer">
+        <h3>Total: ₹ <span class="cart__total">0</span></h3>
+        <button class="clear__cart btn">Clear Cart</button>
+      </div>
+    </div>
+  </section>
+  <!-- script starts here -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+
+</html>

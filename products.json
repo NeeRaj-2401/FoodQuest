@@ -1,0 +1,70 @@
+{
+    "status": "success",
+    "items": [
+        
+        {
+            "id": 1,
+            "title": "Spicy Noodles",
+            "price": 135,
+            "image": "images/home-img-1.png"
+        },
+
+        {
+            "id": 2,
+            "title": "Fried Chicken",
+            "price": 500,
+            "image": "images/home-img-2.png"
+        },
+
+        {
+            "id": 3,
+            "title": "Hot Chilli pizza",
+            "price": 135,
+            "image": "images/home-img-3.png"
+        },
+        
+        {
+            "id": 4,
+            "title": "Burger",
+            "price": 150,
+            "image": "images/dish-1.png"
+        },
+
+        {
+            "id": 5,
+            "title": "Chicken Nuggets",
+            "price": 150,
+            "image": "images/dish-2.png"
+        },
+
+        {
+            "id": 6,
+            "title": "Roast Chicken",
+            "price": 150,
+            "image": "images/dish-3.png"
+        },
+
+        {
+            "id": 7,
+            "title": "Pan Pizza",
+            "price": 150,
+            "image": "images/dish-4.png"
+        },
+
+        {
+            "id": 8,
+            "title": "Chocolate Coockies",
+            "price": 150,
+            "image": "images/dish-5.png"
+        },
+
+        {
+            "id": 9,
+            "title": "Chicken Lollipop",
+            "price": 150,
+            "image": "images/dish-6.png"
+        }
+
+
+    ]
+}
